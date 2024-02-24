@@ -1,10 +1,20 @@
 .main-content {
     display: flex;
+    flex-direction: column;
     padding: 0px;
     padding-right: 10px;
   }
 
 .posts-column {
-  flex: 3;
-  
+  flex: 1; 
+}
+
+@media (max-width: 768px) {
+  .posts-column {
+    padding-right: 0; /* Adjust padding for mobile */
+    align-items: center;
+  }
+  .main-content {
+    padding: 0;
+  }
 }

@@ -19,4 +19,27 @@
     flex: 1;
     padding: 20px;
   }
+
+  /* App.css */
+
+/* App.css */
+
+/* Keep the existing styles for normal view */
+
+@media screen and (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column; /* Change to a single column layout for mobile */
+  }
+
+  /* Change the order for mobile view */
+  .main-content {
+    order: 2; /* Change the order of the MainContent */
+  }
+
+  .subreddits {
+    order: 1; /* Change the order of the Subreddits */
+  }
+}
+
+
   

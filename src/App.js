@@ -1,3 +1,5 @@
+// App.js
+
 import './App.css';
 import React from 'react';
 import TopBar from './TopBar/TopBar.js';
@@ -9,6 +11,7 @@ function App() {
     <div className="app">
       <TopBar />
       <div className="content-wrapper">
+        {/* Normal order: MainContent followed by Subreddits */}
         <div className="main-content">
           <MainContent />
         </div>
