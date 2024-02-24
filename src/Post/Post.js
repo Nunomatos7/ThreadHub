@@ -11,26 +11,33 @@ function Post({ title, author, timestamp, commentsCount, imageUrl }) {
   const [score, setScore] = useState(0); // Initial score value (example)
 
   const handleUpvote = () => {
-    if (upvoted) {
+    if (!upvoted && !downvoted) {
+      setScore(score + 1);
+      setUpvoted(true);
+    } else if (upvoted) {
       setScore(score - 1);
       setUpvoted(false);
     } else {
-      setScore(score + 1);
+      setScore(score + 2);
       setUpvoted(true);
       setDownvoted(false);
     }
   };
-
+  
   const handleDownvote = () => {
-    if (downvoted) {
+    if (!downvoted && !upvoted) {
+      setScore(score - 1);
+      setDownvoted(true);
+    } else if (downvoted) {
       setScore(score + 1);
       setDownvoted(false);
     } else {
-      setScore(score - 1);
+      setScore(score - 2);
       setDownvoted(true);
       setUpvoted(false);
     }
   };
+  
 
   // Simulated comments data
   const simulatedComments = [
