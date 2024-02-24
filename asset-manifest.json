@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ThreadHub/static/css/main.b94166a2.css",
+    "main.css": "/ThreadHub/static/css/main.800abe31.css",
     "main.js": "/ThreadHub/static/js/main.41257b36.js",
     "static/js/453.6404898e.chunk.js": "/ThreadHub/static/js/453.6404898e.chunk.js",
     "static/media/logo.png": "/ThreadHub/static/media/logo.5e24733d394343ba7ba4.png",
     "index.html": "/ThreadHub/index.html",
-    "main.b94166a2.css.map": "/ThreadHub/static/css/main.b94166a2.css.map",
+    "main.800abe31.css.map": "/ThreadHub/static/css/main.800abe31.css.map",
     "main.41257b36.js.map": "/ThreadHub/static/js/main.41257b36.js.map",
     "453.6404898e.chunk.js.map": "/ThreadHub/static/js/453.6404898e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b94166a2.css",
+    "static/css/main.800abe31.css",
     "static/js/main.41257b36.js"
   ]
 }
