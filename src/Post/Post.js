@@ -62,7 +62,7 @@ function Post({ title, author, timestamp, commentsCount, imageUrl }) {
             className={`vote-arrow ${upvoted ? 'upvoted' : ''}`}
             onClick={handleUpvote}
           />
-          <div className="score-value">{score}</div>
+          <div className={`score-value ${upvoted ? 'upvoted' : ''} ${downvoted ? 'downvoted' : ''}`}>{score}</div>
           <FaAngleDoubleDown
             className={`vote-arrow ${downvoted ? 'downvoted' : ''}`}
             onClick={handleDownvote}
@@ -82,6 +82,7 @@ function Post({ title, author, timestamp, commentsCount, imageUrl }) {
         {showComments && <CommentsSection comments={simulatedComments} />}
       </div>
     </div>
+
   );
 }
 
