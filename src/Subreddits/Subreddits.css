@@ -39,10 +39,11 @@
 @media screen and (max-width: 768px) {
   .subreddits {
     padding: 0; /* Remove top padding */
-    width: calc(100% - 40px); /* Adjust the width to fit the screen */
     margin: 0 auto; /* Center the component */
     align-items: center;
-    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+    margin: 0;
+    margin-bottom: 20px;
+    height: fit-content;
   }
 
   .subreddits h2 {
@@ -55,6 +56,7 @@
   }
 
   .subreddits li {
-    padding: 15px 0; /* Adjust vertical padding */
+    padding: 15px 10px; /* Adjust padding for mobile */
   }
+
 }

@@ -29,6 +29,7 @@
 @media screen and (max-width: 768px) {
   .content-wrapper {
     flex-direction: column; /* Change to a single column layout for mobile */
+    margin: 20px 0; /* Remove the margin on the sides */
   }
 
   /* Change the order for mobile view */
@@ -38,6 +39,7 @@
 
   .subreddits {
     order: 1; /* Change the order of the Subreddits */
+    padding: 0;
   }
 }
 
